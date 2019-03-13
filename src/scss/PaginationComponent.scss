@@ -1,0 +1,38 @@
+.pagination{
+
+  ul{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+
+  }
+  li{
+   // display: inline-block;
+    width: 10%;
+    height: 30px;
+    background: #6f80dd ;
+    border: solid 3px #3e38db ;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+  }
+  a{
+    color: white;
+    display: block;
+    text-decoration: none;
+  }
+  &--currentPageInfo{
+    display: block;
+    text-align: center;
+    color: white;
+    width: 25%;
+    height: 30px;
+    background: #6f80dd ;
+    border: solid 3px #3e38db ;
+    border-radius: 5px;
+    font-size: 28px;
+  }
+}

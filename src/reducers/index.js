@@ -13,16 +13,16 @@ const userReducer = (state ={
             return{
                 ...state,
                 users:action.users
-            }
+            };
         case GET_USERS:
             return {
                 ...state,
                 users:action.users
-            }
+            };
         default:
             return state
     }
-}
+};
 const pagesReducer = (state={ data:{
     currentPage:null,
     totalPages:null,
@@ -33,7 +33,7 @@ const pagesReducer = (state={ data:{
             return{
                 ...state,
                data:action.data
-            }
+            };
         default:
             return state
     }
