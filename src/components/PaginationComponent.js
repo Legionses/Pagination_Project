@@ -30,8 +30,8 @@ class PaginationComponent extends Component {
         this.totalRecords = typeof totalRecords === "number" ? totalRecords : 0;
         this.totalPages = Math.ceil(this.totalRecords / this.pageLimit);
 
-        this.state={
-            currentPage:null,
+        this.state = {
+            currentPage: null,
         }
     }
 
@@ -46,7 +46,7 @@ class PaginationComponent extends Component {
             currentPage: page,
             pageLimit: this.pageLimit
         };
-        this.setState({currentPage:page});
+        this.setState({currentPage: page});
         getCurrentPage(paginationData);
 
     };
@@ -59,11 +59,11 @@ class PaginationComponent extends Component {
 
     render() {
         const pagesArr = range(1, this.totalPages);
-        const {currentPage} =  this.state;
+        const {currentPage} = this.state;
         return (
             <div className="pagination">
                 <ul>
-                    <span className="pagination--currentPageInfo">Users amount: {this.totalRecords}</span>
+                    <span className="pagination--currentPageInfo"> Users amount: {this.totalRecords}</span>
                     {pagesArr.map((page, id) =>
                         <li key={id}>
                             <a

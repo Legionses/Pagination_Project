@@ -5,9 +5,9 @@
 import {apiUrl} from '../configs/endpoints';
 import {proxyUrl} from '../configs/endpoints';
 
-class Api{
-    static getUser(){
-       return fetch(proxyUrl + apiUrl)
+class Api {
+    static getUser() {
+        return fetch(proxyUrl + apiUrl)
             .then(response => {
                 return response.json()
             })
